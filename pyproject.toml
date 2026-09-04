@@ -1,0 +1,12 @@
+[build-system]
+requires=["setuptools>=69"]
+build-backend="setuptools.build_meta"
+[project]
+name="termnet"
+version="0.1.0"
+description="Terminal network dashboard"
+requires-python=">=3.10"
+[project.scripts]
+termnet="termnet.cli:main"
+[tool.setuptools.packages.find]
+where=["src"]
